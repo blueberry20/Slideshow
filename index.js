@@ -27,9 +27,9 @@ function handleRightArrowClick() {
 
     //find which slide should be to the left, center and right and assign references to variables
     if (currentIndex == 0) {
-        leftSlide = $(`.slideImgWrapper[data-index=${imageNames.length - 1}]`);
-        currentSlide = $(`.slideImgWrapper[data-index=${currentIndex}]`);
-        rightSlide = $(`.slideImgWrapper[data-index=${currentIndex + 1}]`);
+        leftSlide = $(`.slideImgWrapper[data-index="5"]`);
+        currentSlide = $(`.slideImgWrapper[data-index="0"]`);
+        rightSlide = $(`.slideImgWrapper[data-index="1"]`);
     } else {
         leftSlide = $(`.slideImgWrapper[data-index=${currentIndex - 1}]`);
         currentSlide = $(`.slideImgWrapper[data-index=${currentIndex}]`);
@@ -52,9 +52,9 @@ function handleRightArrowClick() {
         $(leftSlide).attr("data-index", currentIndex + 1);
     } else {
         currentIndex = 0;
-        $(leftSlide).attr("data-index", 1);
-        $(currentSlide).attr("data-index", "0");
-        //$(rightSlide).attr("data-index", "1");
+        $(leftSlide).attr("data-index", 0);
+        $(currentSlide).attr("data-index", 1);
+        $(rightSlide).attr("data-index", 5);
     }
 
     //change the src of left image since it's moved to the right to be shown next

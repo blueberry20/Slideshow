@@ -29,11 +29,29 @@
   <div id="slideshow" class="slideshow">
       <div class="slideWrapper">
           <div
-              id="slide0" data-index="0"
+              id="slide0" data-index="5"
               class="slideImgWrapper"
           >
               <img
                   id="leftImg"
+                  class="slide_img"
+                  src="./img/cheepmunk.jpg"
+                  alt=""
+              />
+              <div
+                  class="iconRight directionIcon"
+                  onClick="handleRightArrowClick()"
+              >
+                  <img src="./img/arrow-right.png" alt="arrow right" />
+              </div>
+              <div
+                  class="iconLeft directionIcon">
+                  <img src="./img/arrow-left.png" alt="arrow left" />
+              </div>
+          </div>
+          <div id="slide1" data-index="0" class="slideImgWrapper">
+              <img
+                  id="currentImg"
                   class="slide_img"
                   src="./img/ant.jpg"
                   alt=""
@@ -49,30 +67,12 @@
                   <img src="./img/arrow-left.png" alt="arrow left" />
               </div>
           </div>
-          <div id="slide1" data-index="1" class="slideImgWrapper">
-              <img
-                  id="currentImg"
-                  class="slide_img"
-                  src="./img/bird.jpg"
-                  alt=""
-              />
-              <div
-                  class="iconRight directionIcon"
-                  onClick="handleRightArrowClick()"
-              >
-                  <img src="./img/arrow-right.png" alt="arrow right" />
-              </div>
-              <div
-                  class="iconLeft directionIcon">
-                  <img src="./img/arrow-left.png" alt="arrow left" />
-              </div>
-          </div>
 
-          <div id="slide2" data-index="2" class="slideImgWrapper">
+          <div id="slide2" data-index="1" class="slideImgWrapper">
               <img
                   id="rightImg"
                   class="slide_img"
-                  src="./img/bunny.jpg"
+                  src="./img/bird.jpg"
                   alt=""
               />
               <div

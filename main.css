@@ -1,0 +1,117 @@
+.App {
+    text-align: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    background-color: aquamarine;
+    height: 100px;
+    padding: 20px;
+    color: #000;
+}
+
+section {
+    height: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.col-25 {
+    width: 25%;
+}
+.col-50 {
+    width: 50%;
+}
+
+h1 {
+    font-family: "Dosis";
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-size: 40px;
+}
+
+/*==================Front section======================*/
+#boxImg {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/*==================Slideshow======================*/
+#slideshowSection {
+    background-color: aquamarine;
+    padding: 0;
+}
+.slideWrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.slideImgWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide_img {
+    width: 400px;
+    position: absolute;
+    margin: 0 0 0 -200px;
+}
+
+#slide1 {
+    left: 0;
+    top: 0;
+}
+
+#slide0 {
+    left: -1200px;
+}
+
+#slide2 {
+    left: 1200px;
+}
+
+/* #currentImg {
+    left: 50%;
+}
+
+#leftImg {
+    left: -600px;
+}
+
+#rightImg {
+    left: 1200px;
+} */
+
+.directionIcon {
+    position: absolute;
+    top: 50%;
+}
+
+.directionIcon img {
+    height: 200px;
+    margin-top: -100px;
+}
+
+.iconLeft {
+    left: 250px;
+}
+
+.iconRight {
+    left: auto;
+    right: 250px;
+}

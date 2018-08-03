@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Animal Action Cards</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Dosis:300,400,500,700,800|Roboto:300,400,500,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <section id="slideshowSection">
+
+  <div id="slideshow" class="slideshow">
+      <div class="slideWrapper">
+          <div
+              id="slide0" data-index="0"
+              class="slideImgWrapper"
+          >
+              <img
+                  id="leftImg"
+                  class="slide_img"
+                  src="./img/ant.jpg"
+                  alt=""
+              />
+              <div
+                  class="iconRight directionIcon"
+                  onClick="handleRightArrowClick()"
+              >
+                  <img src="./img/arrow-right.png" alt="arrow right" />
+              </div>
+              <div
+                  class="iconLeft directionIcon">
+                  <img src="./img/arrow-left.png" alt="arrow left" />
+              </div>
+          </div>
+          <div id="slide1" data-index="1" class="slideImgWrapper">
+              <img
+                  id="currentImg"
+                  class="slide_img"
+                  src="./img/bird.jpg"
+                  alt=""
+              />
+              <div
+                  class="iconRight directionIcon"
+                  onClick="handleRightArrowClick()"
+              >
+                  <img src="./img/arrow-right.png" alt="arrow right" />
+              </div>
+              <div
+                  class="iconLeft directionIcon">
+                  <img src="./img/arrow-left.png" alt="arrow left" />
+              </div>
+          </div>
+
+          <div id="slide2" data-index="2" class="slideImgWrapper">
+              <img
+                  id="rightImg"
+                  class="slide_img"
+                  src="./img/bunny.jpg"
+                  alt=""
+              />
+              <div
+                  class="iconRight directionIcon"
+                  onClick="handleRightArrowClick()"
+              >
+                  <img src="./img/arrow-right.png" alt="arrow right" />
+              </div>
+              <div
+                  class="iconLeft directionIcon">
+                  <img src="./img/arrow-left.png" alt="arrow left" />
+              </div>
+          </div>
+      </div>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>
